@@ -8,9 +8,9 @@ import static org.junit.Assert.assertNull;
 public class JUnitTest {
     @Test
     public void testMethods() {
-
-        assertEquals("amaM", StringPractiseHw.getStrReverse("Mama"));
-        assertEquals("amaM", StringPractiseHw.getStrReverse(" Mama "));
+        String revStr = "amaM";
+        assertEquals(revStr, StringPractiseHw.getStrReverse("Mama"));
+        assertEquals(revStr, StringPractiseHw.getStrReverse(" Mama "));
         assertEquals("aMaM", StringPractiseHw.getStrReverse(" MaMa "));
         //  assertEquals("amaM", StringPractiseHw.getStrReverse("mama"));
         assertNull(StringPractiseHw.getStrReverse(""));

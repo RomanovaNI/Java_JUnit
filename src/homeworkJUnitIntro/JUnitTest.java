@@ -7,7 +7,7 @@ import static org.junit.Assert.assertNull;
 
 public class JUnitTest {
     @Test
-    public void testMethods() {
+    public void getStrReverseTest() {
         String revStr = "amaM";
         assertEquals(revStr, StringPractiseHw.getStrReverse("Mama"));
         assertEquals(revStr, StringPractiseHw.getStrReverse(" Mama "));
@@ -15,7 +15,9 @@ public class JUnitTest {
         //  assertEquals("amaM", StringPractiseHw.getStrReverse("mama"));
         assertNull(StringPractiseHw.getStrReverse(""));
         assertNull(StringPractiseHw.getStrReverse(null));
+    }
 
+    public void getCountWordsTest() {
         assertEquals(2, StringPractiseHw.getCountWords("Two beers or not two beers", "beer"));
         assertEquals(2, StringPractiseHw.getCountWords("Two beers or not two beers", " beer "));
         assertEquals(0, StringPractiseHw.getCountWords("Two beers or not two beers", "bear"));
